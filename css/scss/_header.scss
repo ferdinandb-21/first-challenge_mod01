@@ -1,2 +1,165 @@
+// Mobile///////////////////////////////////////////////////
+.header  {
+    background: color $color-primario_2;;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    padding-top: 30px;
+    font-family: 'Raleway', sans-serif;
 
+    .header-header  {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        .hh-logo {
+            display: flex;
+            justify-content: end;
+
+            img:first-child {
+                width: 30px;
+                height: 35px;
+            }
+
+            p {
+                margin: 0;
+                align-self: flex-end;
+                font-weight: bold;
+                position: relative;
+                right: 10px;
+                top: 4px
+            };
+        }
+
+        .header-nav {
+            display: none;
+        }
+
+        img:last-child  {
+            color: $color-primario;
+            margin-right: 10px;
+        }
+        
+    }
+
+    .header-main  {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p   {
+            font-weight: 500;
+            font-size: 15px;
+            margin-top: 30px;
+            color: #858585;
+        };
+
+        h1  {
+            font-family: 'Abril Fatface', cursive;
+            font-weight: 400;
+            margin: 20px 0;
+            font-size: 30px;
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            margin: 15px 0;
+            width: 280px;
+            height: 20px;
+
+            a:first-child   {
+                background-color: $color-primario;
+                color: $color-primario_2;
+            }
+
+            a:last-child   {
+                border: solid 1.5px $color-primario;
+                color: $color-primario;
+            }
+        }
+
+        div a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 7px;
+            width: 110px;
+            height: 25px;
+            font-weight: 600;
+            font-size: 13px;
+            text-decoration: none;
+            border: solid 1px $color-primario;
+            border-radius: 6px;
+        }
+    }
+
+    .img-piano-header  {
+        margin-top: 30px;
+        width: 90%;
+        //filter: drop-shadow(8px 8px black);
+    }
+
+    .barra-sm   {
+        display: none;
+    }
+}
+
+//Desktop/////////////////////////////////////////
+@media only screen and (min-width:1024px) {
+    .header {
+
+        .header-header  { 
+            padding: 0 20px;  
+
+            .header-nav {
+                display: flex;
+                align-self: flex-start;
+                margin-left: auto;
+                margin-right: 30px;
+
+                .h-nav-a    {
+                    align-self: center;
+                    margin: 0 20px;
+                    text-decoration: none;
+                    font-family: 'Raleway', sans-serif;
+                    color: $color-primario;
+                    font-weight: 600;
+                }
+        
+                .h-nav-a:last-child {
+                @include boton;
+                }
+            }
+            
+        }
+            .header-main  {
+                align-items: center;
+                text-align: none;
+                align-items: center;
+
+                h1 {
+                font-size: 60px;
+                }
+            }
+
+            .img-piano-header  {
+            width: 80%;
+             }
+
+        .barra-sm   {
+            border: solid 1px black;
+            // display: unset;
+            width: 30px;
+            height: 130px;
+            position: sticky;
+            top: 1000px;
+
+            img {
+                margin: 8px 0;
+            }
+        }
+    }   
+}
 

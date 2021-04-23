@@ -1,82 +1,392 @@
-main {
+* {
   margin: 0px;
   padding: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.section-contacto {
-  display: block;
-  padding: 20px 0px;
-  background-image: url("/assets/backgrounds/darius-soodmand-F8E2tks5N04-unsplash 2.png");
-  background-size: cover;
-  opacity: 60%;
-}
-
-h1, p {
-  display: block;
-  width: 100%;
-  text-align: center;
-  padding: 5px 0px;
-  color: black;
-}
-
-.informacion {
-  margin: auto 40%;
-}
-
-label {
-  padding: 10px 10px;
-}
-
-input {
-  opacity: 60%;
-  border: black solid 1px;
-  color: white !important;
-  margin: 8px 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.nombre {
-  width: 100%;
-}
-
-.telefono, .email {
-  width: 45%;
-}
-
-.email {
-  width: 100%;
-  height: 20px;
-}
-
-button {
-  background-color: black;
-  color: white;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-footer {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(gray));
-  background-image: linear-gradient(white, gray);
-}
-
-.logo {
-  margin: 10px 10;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 1px solid;
+.header {
+  background: color #FFFFFF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px;
+  padding-top: 30px;
+  font-family: 'Raleway', sans-serif;
 }
 
-li {
+.header .header-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.header .header-header .hh-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.header .header-header .hh-logo img:first-child {
+  width: 30px;
+  height: 35px;
+}
+
+.header .header-header .hh-logo p {
+  margin: 0;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-weight: bold;
+  position: relative;
+  right: 10px;
+  top: 4px;
+}
+
+.header .header-header .header-nav {
   display: none;
+}
+
+.header .header-header img:last-child {
+  color: #000000;
+  margin-right: 10px;
+}
+
+.header .header-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header-main p {
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: 30px;
+  color: #858585;
+}
+
+.header .header-main h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 400;
+  margin: 20px 0;
+  font-size: 30px;
+}
+
+.header .header-main div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 15px 0;
+  width: 280px;
+  height: 20px;
+}
+
+.header .header-main div a:first-child {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.header .header-main div a:last-child {
+  border: solid 1.5px #000000;
+  color: #000000;
+}
+
+.header .header-main div a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 7px;
+  width: 110px;
+  height: 25px;
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none;
+  border: solid 1px #000000;
+  border-radius: 6px;
+}
+
+.header .img-piano-header {
+  margin-top: 30px;
+  width: 90%;
+}
+
+.header .barra-sm {
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .header .header-header {
+    padding: 0 20px;
+  }
+  .header .header-header .header-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: auto;
+    margin-right: 30px;
+  }
+  .header .header-header .header-nav .h-nav-a {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0 20px;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    color: #000000;
+    font-weight: 600;
+  }
+  .header .header-header .header-nav .h-nav-a:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 7px;
+    width: 110px;
+    height: 25px;
+    font-weight: 600;
+    font-size: 13px;
+    text-decoration: none;
+    border: solid 1px #000000;
+    border-radius: 6px;
+    background-color: #000000;
+    color: #FFFFFF;
+  }
+  .header .header-main {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: none;
+    align-items: center;
+  }
+  .header .header-main h1 {
+    font-size: 60px;
+  }
+  .header .img-piano-header {
+    width: 80%;
+  }
+  .header .barra-sm {
+    border: solid 1px black;
+    width: 30px;
+    height: 130px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1000px;
+  }
+  .header .barra-sm img {
+    margin: 8px 0;
+  }
+}
+
+.section-pianos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Raleway', sans-serif;
+  background-color: #EDEDED;
+}
+
+.section-pianos h2 {
+  width: 300px;
+  text-align: center;
+  font-family: 'Abril Fatface', cursive;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.section-pianos .sec-articulos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+}
+
+.section-pianos .sec-articulos .sec-piano-art {
+  width: 280px;
+  height: 350px;
+  margin: 15px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  padding: 8px 4px;
+}
+
+.section-pianos .sec-articulos .sec-piano-art h3 {
+  border-top: dashed #DBDBDB;
+  margin-top: 30px;
+  padding-top: 30px;
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 400;
+}
+
+.section-pianos .sec-articulos .sec-piano-art .piano-especificaciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+}
+
+.section-pianos .sec-articulos .sec-piano-art .piano-especificaciones img {
+  width: 4px;
+  height: 4px;
+  margin: 0 10px;
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+}
+
+.section-pianos .sec-articulos .sec-piano-art .piano-especificaciones p {
+  color: #000000;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.section-pianos .sec-articulos .sec-piano-art .precio-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-pianos .sec-articulos .sec-piano-art .precio-cart .piano-precio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 7px;
+  width: 110px;
+  height: 25px;
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none;
+  border: solid 1px #000000;
+  border-radius: 6px;
+  background-color: #000000;
+  color: #FFFFFF;
+  width: 150px;
+  height: 30px;
+  margin: 0;
+  margin-top: 8px;
+  color: #000000;
+  background-color: #FFFFFF;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.section-pianos .sec-articulos .sec-piano-art .precio-cart .carrito {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  background-color: #000000;
+}
+
+.section-pianos .sec-articulos .sec-piano-art .precio-cart img {
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  -webkit-filter: invert(100);
+          filter: invert(100);
+}
+
+.section-pianos .sec-articulos .sec-piano-art .piano-img-rec {
+  display: none;
+}
+
+.section-pianos a {
+  border: solid 1px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 7px;
+  width: 110px;
+  height: 25px;
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none;
+  border: solid 1px #000000;
+  border-radius: 6px;
+  background-color: #000000;
+  color: #FFFFFF;
+  text-align: center;
+  width: 130px;
+  margin: 25px 0;
 }
 /*# sourceMappingURL=styles.css.map */
