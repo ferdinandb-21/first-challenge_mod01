@@ -36,7 +36,7 @@
     position: absolute;
     top: 390px;
     margin-top:480px;
-    margin-left: 20px;
+    margin-left: 50px;
     text-align: center;
     color: white;
     font-family: Abril Fatface;
@@ -48,8 +48,7 @@
    display: flex;
    position: absolute;
    margin-top:408px;
-   margin-right: 505px;
-   margin-left: 25px;
+   margin-left: 55px;
    color: white;
    font-family: Raleway;
    font-style: normal;
@@ -59,7 +58,7 @@
    display: flex;
    position: absolute;
    margin-top:445px;
-   margin-left: 20px;
+   margin-left: 50px;
    color: white;
    text-align: center;
    font-family: Abril Fatface;
@@ -67,15 +66,62 @@
    font-style: normal;
    font-weight: normal; 
 }
+.text{
+    width: 5000VH;
+    color: white;
+}
 .parra{
    display: flex;
-   margin-top:479px;
-   margin-right: 200px ;
+   margin-top: 493px;
+   text-align: center;
+   margin-right: 20PX;
+   font-family: Raleway;
+   font-style: normal;
+   font-weight: normal;
    color: white;
 }
-.item{
-    
+.items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3px;
+    margin-right: 10px;
+    color: white;
+
+    img {
+        width: 4px;
+        height: 4px;
+        margin: 0 5px;
+        filter: brightness(0.5);
+    }
+
+    p  {
+        font-size: 14px;
+        color: white;
+        text-align: justify;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: bold;
+    }
 }
+.button{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin-top: 700px;
+    margin-left: 43px;
+    width: 228px;
+    height: 32px;
+    font-weight: 600;
+    font-size: 13px;
+    text-decoration: none;
+    border: solid 1px $color-primario;
+    border-radius: 8px;
+    background: black;
+    color: white;
+}
+
 
 
 

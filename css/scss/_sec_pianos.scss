@@ -31,8 +31,8 @@
 
             h3 {
                 border-top: dashed #DBDBDB;
-                margin-top: 30px;
-                padding-top: 30px;
+                margin: 0;
+                padding-top: 20px;
                 font-family: 'Abril Fatface', cursive;
                 font-weight: 400;
             }
@@ -41,18 +41,18 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                margin-top: 10px;
+                margin-top: 5px;
 
                 img {
                     width: 4px;
                     height: 4px;
-                    margin: 0 10px;
+                    margin: 0 5px;
                     filter: brightness(0.5);
                 }
 
                 p  {
                     color: $color-primario;
-                    font-size: 16px;
+                    font-size: 14px;
                     text-align: justify;
                 }
             }
@@ -61,35 +61,38 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                margin-top: 20px;
+                padding: 0 5px;
+
 
                 .piano-precio   {
                     @include boton;
                     width: 150px;
-                    height: 30px;
+                    height: 40px;
                     margin: 0;
-                    margin-top: 8px;
                     color: $color-primario;
                     background-color: $color-primario_2;
                     font-weight: 400;
                     font-size: 15px;
-                }
-
-                .carrito   {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    border-radius: 5px;
-                    width: 30px;
-                    height:30px;
-                    background-color: $color-primario;
-
+                    padding: 0;
                 }
 
                 img  {
                     border-radius: 5px;
-                    width: 20px;
-                    height:20px;
+                    width: 25px;
+                    height:25px;
                     filter: invert(100);
+                }
+
+                .carrito    {
+                    background-color: $color-primario;
+                    border-radius: 5px;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 5px;
                 }
 
             }
