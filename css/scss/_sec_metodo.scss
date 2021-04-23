@@ -13,23 +13,28 @@
     position: static;
     z-index: -1;
     width: 670px;
-    opacity: 0.8;
+    display: flex;
+
 }
 .piano_met{
+    display: flex;
     position: absolute;
-
+    width: 500px;
+    height: 280px;
+    margin-top: 80px;
+    margin-left: 15px;
 }
 .overlay{
     position: static;
-    top: 100px;
     width: 320px;
-    height: 450px;
+    height: 400px;
+    margin-top: 0px;
     background: gray;
 }
-
 .ebony{
-    position: static;
+    position: absolute;
     top: 390px;
+    margin-top:500px;
     text-align: center;
     color: white;
 }

@@ -229,24 +229,34 @@
   position: static;
   z-index: -1;
   width: 670px;
-  opacity: 0.8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .piano_met {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
+  width: 500px;
+  height: 280px;
+  margin-top: 80px;
+  margin-left: 15px;
 }
 
 .overlay {
   position: static;
-  top: 100px;
   width: 320px;
-  height: 450px;
+  height: 400px;
+  margin-top: 0px;
   background: gray;
 }
 
 .ebony {
-  position: static;
+  position: absolute;
   top: 390px;
+  margin-top: 500px;
   text-align: center;
   color: white;
 }
@@ -426,5 +436,103 @@
   text-align: center;
   width: 130px;
   margin: 25px 0;
+}
+
+.section-contacto {
+  display: block;
+  padding: 20px 0px;
+  background-image: url("/assets/backgrounds/darius-soodmand-F8E2tks5N04-unsplash 2.png");
+  background-size: cover;
+  opacity: 60%;
+}
+
+h1, p {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0px;
+  color: black;
+}
+
+.informacion {
+  margin: auto 40%;
+}
+
+label {
+  padding: 10px 10px;
+}
+
+input {
+  opacity: 60%;
+  border: black solid 1px;
+  color: white !important;
+  margin: 8px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.nombre {
+  width: 100%;
+}
+
+.telefono, .email {
+  width: 45%;
+}
+
+.email {
+  width: 100%;
+  height: 20px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+footer {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(gray));
+  background-image: linear-gradient(white, gray);
+}
+
+.logoP {
+  margin: 10px 10;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.social {
+  margin: 5px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 1px solid black;
+}
+
+.nosotros {
+  list-style: none;
+}
+
+.textos {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=styles.css.map */
