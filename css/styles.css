@@ -213,6 +213,44 @@
   }
 }
 
+.section-metodo {
+  position: static;
+  width: 320px;
+  height: 778px;
+}
+
+.meth {
+  position: absolute;
+  text-align: center;
+  font-size: 24px;
+}
+
+.vid {
+  position: static;
+  z-index: -1;
+  width: 670px;
+  opacity: 0.8;
+}
+
+.piano_met {
+  position: absolute;
+}
+
+.overlay {
+  position: static;
+  top: 100px;
+  width: 320px;
+  height: 450px;
+  background: gray;
+}
+
+.ebony {
+  position: static;
+  top: 390px;
+  text-align: center;
+  color: white;
+}
+
 .section-pianos {
   display: -webkit-box;
   display: -ms-flexbox;
