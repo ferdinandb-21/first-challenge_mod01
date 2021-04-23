@@ -214,21 +214,27 @@
 }
 
 .section-metodo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: static;
   width: 320px;
   height: 778px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), color-stop(37.19%, rgba(0, 0, 0, 0.75)), color-stop(76.04%, rgba(0, 0, 0, 0.75)), to(#FFFFFF));
+  background-image: linear-gradient(180deg, #FFFFFF 0%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 76.04%, #FFFFFF 100%);
 }
 
 .meth {
   position: absolute;
   text-align: center;
+  margin-top: 15px;
   font-size: 24px;
 }
 
 .vid {
-  position: static;
+  position: absolute;
   z-index: -1;
-  width: 670px;
+  width: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -248,13 +254,12 @@
 .overlay {
   position: static;
   width: 320px;
-  height: 400px;
+  height: 406px;
   margin-top: 0px;
-  background: gray;
 }
 
 .ebony {
-  position: absolute;
+  position: static;
   top: 390px;
   margin-top: 500px;
   text-align: center;
