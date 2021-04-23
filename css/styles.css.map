@@ -1,8 +1,18 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AIAA,AAAA,IAAI,CAAC;EACD,MAAM,EAAE,GAAG;EACX,OAAO,EAAE,GAAG;EACZ,UAAU,EAAE,UAAU;CACzB",
     "sources": [
-        "styles.scss"
+        "styles.scss",
+        "scss/_variables.scss",
+        "scss/_base.scss",
+        "scss/_mixins.scss",
+        "scss/_main.scss",
+        "scss/_header.scss",
+        "scss/_sec_metodo.scss",
+        "scss/_sec_pianos.scss",
+        "scss/_sec_contacto.scss",
+        "scss/_sec_partners.scss",
+        "scss/_footer.scss"
     ],
     "names": [],
     "file": "styles.css"
