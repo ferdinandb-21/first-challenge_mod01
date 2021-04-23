@@ -4,4 +4,50 @@ main {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+* {
+  padding: 0;
+  margin: 0;
+  width: 105vw;
+}
+
+header {
+  position: absolute;
+  text-align: center;
+  font-size: 24px;
+}
+
+.section-metodo {
+  position: absolute;
+  width: 320px;
+  height: 778px;
+}
+
+.vid {
+  position: fixed;
+  z-index: -1;
+  width: 670px;
+  opacity: 0.8;
+}
+
+.piano_met {
+  position: absolute;
+  margin-left: 0%;
+  margin-top: 17%;
+}
+
+.overlay {
+  position: fixed;
+  top: 377px;
+  width: 320px;
+  height: 450px;
+  background: gray;
+}
+
+.ebony {
+  position: fixed;
+  top: 390px;
+  text-align: center;
+  color: white;
+}
 /*# sourceMappingURL=styles.css.map */
