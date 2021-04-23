@@ -210,7 +210,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: static;
+  position: relative;
   width: 320px;
   height: 778px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), color-stop(37.19%, rgba(0, 0, 0, 0.75)), color-stop(76.04%, rgba(0, 0, 0, 0.75)), to(#FFFFFF));
@@ -227,7 +227,8 @@
 .vid {
   position: absolute;
   z-index: -1;
-  width: 320px;
+  top: 90px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -246,17 +247,21 @@
 
 .overlay {
   position: static;
-  width: 320px;
+  width: 360px;
   height: 406px;
   margin-top: 0px;
 }
 
 .ebony {
   position: absolute;
-  top: 390px;
-  margin-top: 480px;
+  top: 350px;
+  margin-left: 50px;
   text-align: center;
   color: white;
+  font-family: Abril Fatface;
+  font-family: Abril Fatface;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .star {
@@ -264,10 +269,12 @@
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  margin-top: 405px;
-  margin-right: 505px;
-  margin-left: 5px;
+  margin-top: 408px;
+  margin-left: 55px;
   color: white;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
 }
 
 .price {
@@ -276,7 +283,86 @@
   display: flex;
   position: absolute;
   margin-top: 445px;
-  margin-right: 505px;
+  margin-left: 50px;
+  color: white;
+  text-align: center;
+  font-family: Abril Fatface;
+  font-family: Abril Fatface;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.text {
+  width: 5000VH;
+  color: white;
+}
+
+.parra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 493px;
+  text-align: center;
+  margin-right: 20PX;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  color: white;
+}
+
+.items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 3px;
+  margin-right: 10px;
+  color: white;
+}
+
+.items img {
+  width: 4px;
+  height: 4px;
+  margin: 0 5px;
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+}
+
+.items p {
+  font-size: 14px;
+  color: white;
+  text-align: justify;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 700px;
+  margin-left: 43px;
+  width: 228px;
+  height: 32px;
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none;
+  border: solid 1px #000000;
+  border-radius: 8px;
+  background: black;
   color: white;
 }
 
