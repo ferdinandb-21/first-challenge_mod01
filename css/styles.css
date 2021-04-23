@@ -328,8 +328,8 @@
 
 .section-pianos .sec-articulos .sec-piano-art h3 {
   border-top: dashed #DBDBDB;
-  margin-top: 30px;
-  padding-top: 30px;
+  margin: 0;
+  padding-top: 20px;
   font-family: 'Abril Fatface', cursive;
   font-weight: 400;
 }
@@ -344,20 +344,20 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .section-pianos .sec-articulos .sec-piano-art .piano-especificaciones img {
   width: 4px;
   height: 4px;
-  margin: 0 10px;
+  margin: 0 5px;
   -webkit-filter: brightness(0.5);
           filter: brightness(0.5);
 }
 
 .section-pianos .sec-articulos .sec-piano-art .piano-especificaciones p {
   color: #000000;
-  font-size: 16px;
+  font-size: 14px;
   text-align: justify;
 }
 
@@ -371,6 +371,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 20px;
+  padding: 0 5px;
 }
 
 .section-pianos .sec-articulos .sec-piano-art .precio-cart .piano-precio {
@@ -394,21 +396,38 @@
   background-color: #000000;
   color: #FFFFFF;
   width: 150px;
-  height: 30px;
+  height: 40px;
   margin: 0;
-  margin-top: 8px;
   color: #000000;
   background-color: #FFFFFF;
   font-weight: 400;
   font-size: 15px;
+  padding: 0;
 }
 
 .section-pianos .sec-articulos .sec-piano-art .precio-cart img {
   border-radius: 5px;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   -webkit-filter: invert(100);
           filter: invert(100);
+}
+
+.section-pianos .sec-articulos .sec-piano-art .precio-cart .carrito {
+  background-color: #000000;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 5px;
 }
 
 .section-pianos .sec-articulos .sec-piano-art .piano-img-rec {
