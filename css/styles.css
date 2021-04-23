@@ -259,10 +259,31 @@
 }
 
 .ebony {
-  position: static;
+  position: absolute;
   top: 390px;
-  margin-top: 500px;
+  margin-top: 480px;
   text-align: center;
+  color: white;
+}
+
+.star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  margin-top: 405px;
+  margin-right: 505px;
+  margin-left: 5px;
+  color: white;
+}
+
+.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  margin-top: 445px;
+  margin-right: 505px;
   color: white;
 }
 
