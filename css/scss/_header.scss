@@ -1,4 +1,4 @@
-// Mobile
+// Mobile///////////////////////////////////////////////////
 .header  {
     background: color $color-primario_2;;
     display: flex;
@@ -31,10 +31,9 @@
             };
         }
 
-        // .header-nav:first-of-type {
-        //     // display: none;
-        //     visibility: hidden;
-        // }
+        .header-nav {
+            display: none;
+        }
 
         img:last-child  {
             color: $color-primario;
@@ -98,69 +97,69 @@
 
     .img-piano-header  {
         margin-top: 30px;
-        filter: drop-shadow(8px 8px black);
+        width: 90%;
+        //filter: drop-shadow(8px 8px black);
+    }
+
+    .barra-sm   {
+        display: none;
     }
 }
 
-// Anidado no se quita al momento de pasar por el media query
-        .header-nav {
-            // display: none;
-            display: none;
-        }
-        // Revisar esto!!!
+//Desktop/////////////////////////////////////////
+@media only screen and (min-width:1024px) {
+    .header {
 
+        .header-header  { 
+            padding: 0 20px;  
 
-@media only screen and (min-width: 1024px) {
-    .header-header  { 
-        padding: 0 20px;  
-
-        .header-nav {
-            display: flex;
-            align-self: flex-start;
-            margin-left: auto;
-            margin-right: 30px;
-
-            .h-nav-a    {
-                align-self: center;
-                margin: 0 20px;
-                text-decoration: none;
-                font-family: 'Raleway', sans-serif;
-                color: $color-primario;
-                font-weight: 600;
-            }
-    
-            .h-nav-a:last-child {
+            .header-nav {
                 display: flex;
+                align-self: flex-start;
+                margin-left: auto;
+                margin-right: 30px;
+
+                .h-nav-a    {
+                    align-self: center;
+                    margin: 0 20px;
+                    text-decoration: none;
+                    font-family: 'Raleway', sans-serif;
+                    color: $color-primario;
+                    font-weight: 600;
+                }
+        
+                .h-nav-a:last-child {
+                @include boton;
+                }
+            }
+            
+        }
+            .header-main  {
                 align-items: center;
-                justify-content: center;;
-                border: solid 1px black;
-                width: 130px;
-                height: 30px;
-                border-radius: 6px;
-                color: $color-primario_2;
-                background-color: $color-primario;
+                text-align: none;
+                align-items: center;
+
+                h1 {
+                font-size: 60px;
+                }
+            }
+
+            .img-piano-header  {
+            width: 80%;
+             }
+
+        .barra-sm   {
+            border: solid 1px black;
+            // display: unset;
+            width: 30px;
+            height: 130px;
+            position: sticky;
+            top: 1000px;
+
+            img {
+                margin: 8px 0;
             }
         }
-
-        .header-main    {
-            align-items: center;
-            text-align: none;
-            align-items: center;
-
-            h1 {
-                border: solid 1px black;
-                font-size: 80px;
-                background-color: red;
-            }
-
-            p   {
-                border: solid 1px black;
-                font-size: 80px;
-                background-color: red;
-
-            }
-
-        }
-    }
-
+    }   
 }
+

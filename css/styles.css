@@ -53,6 +53,10 @@
   top: 4px;
 }
 
+.header .header-header .header-nav {
+  display: none;
+}
+
 .header .header-header img:last-child {
   color: #000000;
   margin-right: 10px;
@@ -132,19 +136,18 @@
 
 .header .img-piano-header {
   margin-top: 30px;
-  -webkit-filter: drop-shadow(8px 8px black);
-          filter: drop-shadow(8px 8px black);
+  width: 90%;
 }
 
-.header-nav {
+.header .barra-sm {
   display: none;
 }
 
 @media only screen and (min-width: 1024px) {
-  .header-header {
+  .header .header-header {
     padding: 0 20px;
   }
-  .header-header .header-nav {
+  .header .header-header .header-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -153,7 +156,7 @@
     margin-left: auto;
     margin-right: 30px;
   }
-  .header-header .header-nav .h-nav-a {
+  .header .header-header .header-nav .h-nav-a {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -163,7 +166,7 @@
     color: #000000;
     font-weight: 600;
   }
-  .header-header .header-nav .h-nav-a:last-child {
+  .header .header-header .header-nav .h-nav-a:last-child {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -173,29 +176,217 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    border: solid 1px black;
-    width: 130px;
-    height: 30px;
+    margin: 0 7px;
+    width: 110px;
+    height: 25px;
+    font-weight: 600;
+    font-size: 13px;
+    text-decoration: none;
+    border: solid 1px #000000;
     border-radius: 6px;
-    color: #FFFFFF;
     background-color: #000000;
+    color: #FFFFFF;
   }
-  .header-header .header-main {
+  .header .header-main {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     text-align: none;
     align-items: center;
   }
-  .header-header .header-main h1 {
-    border: solid 1px black;
-    font-size: 80px;
-    background-color: red;
+  .header .header-main h1 {
+    font-size: 60px;
   }
-  .header-header .header-main p {
-    border: solid 1px black;
-    font-size: 80px;
-    background-color: red;
+  .header .img-piano-header {
+    width: 80%;
   }
+  .header .barra-sm {
+    border: solid 1px black;
+    width: 30px;
+    height: 130px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1000px;
+  }
+  .header .barra-sm img {
+    margin: 8px 0;
+  }
+}
+
+.section-pianos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Raleway', sans-serif;
+  background-color: #EDEDED;
+}
+
+.section-pianos h2 {
+  width: 300px;
+  text-align: center;
+  font-family: 'Abril Fatface', cursive;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.section-pianos .sec-articulos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+}
+
+.section-pianos .sec-articulos .sec-piano-art {
+  width: 280px;
+  height: 350px;
+  margin: 15px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  padding: 8px 4px;
+}
+
+.section-pianos .sec-articulos .sec-piano-art h3 {
+  border-top: dashed #DBDBDB;
+  margin-top: 30px;
+  padding-top: 30px;
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 400;
+}
+
+.section-pianos .sec-articulos .sec-piano-art .piano-especificaciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+}
+
+.section-pianos .sec-articulos .sec-piano-art .piano-especificaciones img {
+  width: 4px;
+  height: 4px;
+  margin: 0 10px;
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+}
+
+.section-pianos .sec-articulos .sec-piano-art .piano-especificaciones p {
+  color: #000000;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.section-pianos .sec-articulos .sec-piano-art .precio-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-pianos .sec-articulos .sec-piano-art .precio-cart .piano-precio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 7px;
+  width: 110px;
+  height: 25px;
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none;
+  border: solid 1px #000000;
+  border-radius: 6px;
+  background-color: #000000;
+  color: #FFFFFF;
+  width: 150px;
+  height: 30px;
+  margin: 0;
+  margin-top: 8px;
+  color: #000000;
+  background-color: #FFFFFF;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.section-pianos .sec-articulos .sec-piano-art .precio-cart .carrito {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  background-color: #000000;
+}
+
+.section-pianos .sec-articulos .sec-piano-art .precio-cart img {
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  -webkit-filter: invert(100);
+          filter: invert(100);
+}
+
+.section-pianos .sec-articulos .sec-piano-art .piano-img-rec {
+  display: none;
+}
+
+.section-pianos a {
+  border: solid 1px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 7px;
+  width: 110px;
+  height: 25px;
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none;
+  border: solid 1px #000000;
+  border-radius: 6px;
+  background-color: #000000;
+  color: #FFFFFF;
+  text-align: center;
+  width: 130px;
+  margin: 25px 0;
 }
 /*# sourceMappingURL=styles.css.map */
