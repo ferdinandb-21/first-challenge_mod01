@@ -3,6 +3,7 @@
   padding: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
 }
 
 .header {
@@ -262,8 +263,13 @@
   position: absolute;
   top: 390px;
   margin-top: 480px;
+  margin-left: 20px;
   text-align: center;
   color: white;
+  font-family: Abril Fatface;
+  font-family: Abril Fatface;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .star {
@@ -271,10 +277,13 @@
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  margin-top: 405px;
+  margin-top: 408px;
   margin-right: 505px;
-  margin-left: 5px;
+  margin-left: 25px;
   color: white;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
 }
 
 .price {
@@ -283,7 +292,21 @@
   display: flex;
   position: absolute;
   margin-top: 445px;
-  margin-right: 505px;
+  margin-left: 20px;
+  color: white;
+  text-align: center;
+  font-family: Abril Fatface;
+  font-family: Abril Fatface;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.parra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 479px;
+  margin-right: 200px;
   color: white;
 }
 
