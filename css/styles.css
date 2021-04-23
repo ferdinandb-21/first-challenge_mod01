@@ -1,10 +1,3 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 .header {
   background: color #FFFFFF;
   display: -webkit-box;
@@ -40,7 +33,7 @@
 
 .header .header-header .hh-logo img:first-child {
   width: 30px;
-  height: 35px;
+  height: 30px;
 }
 
 .header .header-header .hh-logo p {
@@ -50,7 +43,7 @@
   font-weight: bold;
   position: relative;
   right: 10px;
-  top: 4px;
+  top: 9px;
 }
 
 .header .header-header .header-nav {
@@ -214,21 +207,28 @@
 }
 
 .section-metodo {
-  position: static;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
   width: 320px;
   height: 778px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), color-stop(37.19%, rgba(0, 0, 0, 0.75)), color-stop(76.04%, rgba(0, 0, 0, 0.75)), to(#FFFFFF));
+  background-image: linear-gradient(180deg, #FFFFFF 0%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 76.04%, #FFFFFF 100%);
 }
 
 .meth {
   position: absolute;
   text-align: center;
+  margin-top: 15px;
   font-size: 24px;
 }
 
 .vid {
-  position: static;
+  position: absolute;
   z-index: -1;
-  width: 670px;
+  top: 90px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -239,7 +239,7 @@
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  width: 500px;
+  width: 100%;
   height: 280px;
   margin-top: 80px;
   margin-left: 15px;
@@ -247,17 +247,122 @@
 
 .overlay {
   position: static;
-  width: 320px;
-  height: 400px;
+  width: 360px;
+  height: 406px;
   margin-top: 0px;
-  background: gray;
 }
 
 .ebony {
   position: absolute;
-  top: 390px;
-  margin-top: 500px;
+  top: 350px;
+  margin-left: 50px;
   text-align: center;
+  color: white;
+  font-family: Abril Fatface;
+  font-family: Abril Fatface;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  margin-top: 408px;
+  margin-left: 55px;
+  color: white;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  margin-top: 445px;
+  margin-left: 50px;
+  color: white;
+  text-align: center;
+  font-family: Abril Fatface;
+  font-family: Abril Fatface;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.text {
+  width: 5000VH;
+  color: white;
+}
+
+.parra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 493px;
+  text-align: center;
+  margin-right: 20PX;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  color: white;
+}
+
+.items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 3px;
+  margin-right: 10px;
+  color: white;
+}
+
+.items img {
+  width: 4px;
+  height: 4px;
+  margin: 0 5px;
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+}
+
+.items p {
+  font-size: 14px;
+  color: white;
+  text-align: justify;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 700px;
+  margin-left: 43px;
+  width: 228px;
+  height: 32px;
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none;
+  border: solid 1px #000000;
+  border-radius: 8px;
+  background: black;
   color: white;
 }
 
@@ -274,10 +379,11 @@
           align-items: center;
   font-family: 'Raleway', sans-serif;
   background-color: #EDEDED;
+  padding: 0;
 }
 
 .section-pianos h2 {
-  width: 300px;
+  width: 250px;
   text-align: center;
   font-family: 'Abril Fatface', cursive;
   font-weight: normal;
@@ -309,8 +415,8 @@
 
 .section-pianos .sec-articulos .sec-piano-art h3 {
   border-top: dashed #DBDBDB;
-  margin-top: 30px;
-  padding-top: 30px;
+  margin: 0;
+  padding-top: 20px;
   font-family: 'Abril Fatface', cursive;
   font-weight: 400;
 }
@@ -325,21 +431,22 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .section-pianos .sec-articulos .sec-piano-art .piano-especificaciones img {
   width: 4px;
   height: 4px;
-  margin: 0 10px;
+  margin: 0 5px;
   -webkit-filter: brightness(0.5);
           filter: brightness(0.5);
 }
 
 .section-pianos .sec-articulos .sec-piano-art .piano-especificaciones p {
   color: #000000;
-  font-size: 16px;
-  text-align: justify;
+  font-size: 14px;
+  text-align: center;
+  margin: 0px;
 }
 
 .section-pianos .sec-articulos .sec-piano-art .precio-cart {
@@ -352,6 +459,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 20px;
+  padding: 0 5px;
 }
 
 .section-pianos .sec-articulos .sec-piano-art .precio-cart .piano-precio {
@@ -375,16 +484,28 @@
   background-color: #000000;
   color: #FFFFFF;
   width: 150px;
-  height: 30px;
+  height: 40px;
   margin: 0;
-  margin-top: 8px;
   color: #000000;
   background-color: #FFFFFF;
   font-weight: 400;
   font-size: 15px;
+  padding: 0;
+}
+
+.section-pianos .sec-articulos .sec-piano-art .precio-cart img {
+  border-radius: 5px;
+  width: 25px;
+  height: 25px;
+  -webkit-filter: invert(100);
+          filter: invert(100);
 }
 
 .section-pianos .sec-articulos .sec-piano-art .precio-cart .carrito {
+  background-color: #000000;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -394,18 +515,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 5px;
-  width: 30px;
-  height: 30px;
-  background-color: #000000;
-}
-
-.section-pianos .sec-articulos .sec-piano-art .precio-cart img {
-  border-radius: 5px;
-  width: 20px;
-  height: 20px;
-  -webkit-filter: invert(100);
-          filter: invert(100);
+  margin-right: 5px;
 }
 
 .section-pianos .sec-articulos .sec-piano-art .piano-img-rec {
@@ -436,6 +546,48 @@
   text-align: center;
   width: 130px;
   margin: 25px 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  .section-pianos h2 {
+    width: 350px;
+  }
+  .section-pianos .sec-articulos {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section-pianos .sec-articulos .sec-piano-art .piano-especificaciones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 5px;
+  }
+  .section-pianos .sec-articulos .sec-piano-art .piano-especificaciones p {
+    color: #000000;
+    font-size: 12px;
+    text-align: center;
+  }
+  .section-pianos .sec-articulos .sec-piano-art .piano-especificaciones img {
+    width: 4px;
+    height: 4px;
+    margin: 0 2px;
+    -webkit-filter: brightness(0.5);
+            filter: brightness(0.5);
+  }
+  .section-pianos .sec-articulos .sec-piano-art .precio-cart {
+    padding: 0px;
+  }
 }
 
 .section-contacto {
@@ -521,10 +673,7 @@ footer {
 }
 
 section.textos, section.contacto {
-  padding: 20px;
   text-align: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 section.textos {

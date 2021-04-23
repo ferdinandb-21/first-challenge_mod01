@@ -1,43 +1,127 @@
 ///----Mobile
 .section-metodo{
-    position: static;
+    display: flex;
+    position: relative;
     width: 320px;
     height: 778px;
+    background-image: linear-gradient(180deg, #FFFFFF 0%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 76.04%, #FFFFFF 100%);
 }
 .meth{
     position: absolute;
     text-align: center;
+    margin-top: 15px;
     font-size: 24px;
 }
 .vid{
-    position: static;
+    position: absolute;
     z-index: -1;
-    width: 670px;
+    top: 90px;
+    width: 100%;
     display: flex;
-
 }
 .piano_met{
     display: flex;
     position: absolute;
-    width: 500px;
+    width: 100%;
     height: 280px;
     margin-top: 80px;
     margin-left: 15px;
 }
 .overlay{
     position: static;
-    width: 320px;
-    height: 400px;
+    width: 360px;
+    height: 406px;
     margin-top: 0px;
-    background: gray;
 }
 .ebony{
     position: absolute;
-    top: 390px;
-    margin-top:500px;
+    top: 350px;
+    margin-left: 50px;
     text-align: center;
     color: white;
+    font-family: Abril Fatface;
+    font-family: Abril Fatface;
+    font-style: normal;
+    font-weight: normal;
 }
+.star{
+   display: flex;
+   position: absolute;
+   margin-top:408px;
+   margin-left: 55px;
+   color: white;
+   font-family: Raleway;
+   font-style: normal;
+   font-weight: bold;
+}
+.price{
+   display: flex;
+   position: absolute;
+   margin-top:445px;
+   margin-left: 50px;
+   color: white;
+   text-align: center;
+   font-family: Abril Fatface;
+   font-family: Abril Fatface;
+   font-style: normal;
+   font-weight: normal; 
+}
+.text{
+    width: 5000VH;
+    color: white;
+}
+.parra{
+   display: flex;
+   margin-top: 493px;
+   text-align: center;
+   margin-right: 20PX;
+   font-family: Raleway;
+   font-style: normal;
+   font-weight: normal;
+   color: white;
+}
+.items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3px;
+    margin-right: 10px;
+    color: white;
+
+    img {
+        width: 4px;
+        height: 4px;
+        margin: 0 5px;
+        filter: brightness(0.5);
+    }
+
+    p  {
+        font-size: 14px;
+        color: white;
+        text-align: justify;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: bold;
+    }
+}
+.button{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin-top: 700px;
+    margin-left: 43px;
+    width: 228px;
+    height: 32px;
+    font-weight: 600;
+    font-size: 13px;
+    text-decoration: none;
+    border: solid 1px $color-primario;
+    border-radius: 8px;
+    background: black;
+    color: white;
+}
+
 
 
 
