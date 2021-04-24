@@ -1,22 +1,30 @@
 footer{
     background-image: linear-gradient(white,gray);
+    display: flex;
+    flex-direction: column;
 }
 .logoP{
     margin: 10px 10;
     box-sizing: border-box;
-    border: 1px solid;
-    display: flex;
-    align-items: flex-start;
-}
-.social{
-    margin: 5px 0;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    border: 1px solid black;
+    text-align: center;
 }
 
-.nosotros{
+
+.social{
+    margin: 5px 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+section.textos, section.contacto{
+    text-align: center;
+}
+
+section.textos{
+    line-height: 30px;
+}
+
+li{
     list-style: none;
 }
 
