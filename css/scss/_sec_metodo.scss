@@ -35,7 +35,7 @@
 }
 .ebony{
     position: absolute;
-    top: 350px;
+    top: 320px;
     margin-left: 50px;
     text-align: center;
     color: white;
@@ -45,20 +45,18 @@
     font-weight: normal;
 }
 .star{
-   display: flex;
    position: absolute;
-   margin-top:408px;
-   margin-left: 55px;
+   bottom:355px;
+   right: 60px;
    color: white;
    font-family: Raleway;
    font-style: normal;
    font-weight: bold;
 }
 .price{
-   display: flex;
    position: absolute;
-   margin-top:445px;
-   margin-left: 50px;
+   top:395px;
+   left: 50px;
    color: white;
    text-align: center;
    font-family: Abril Fatface;
@@ -71,10 +69,10 @@
     color: white;
 }
 .parra{
-   display: flex;
-   margin-top: 493px;
+   position: absolute;
+   top: 450px;
    text-align: center;
-   margin-right: 20PX;
+   right: 5PX;
    font-family: Raleway;
    font-style: normal;
    font-weight: normal;
@@ -84,7 +82,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 3px;
+    margin-top: 615px;
     margin-right: 10px;
     color: white;
 
@@ -120,6 +118,97 @@
     border-radius: 8px;
     background: black;
     color: white;
+}
+
+@media only screen and (min-width:1024px) {
+    .section-metodo{
+        display: flex;
+        position: relative;
+        background-image: linear-gradient(180deg, #FFFFFF 0%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 76.04%, #FFFFFF 100%);
+        width: 1024px;
+        height: 851px;
+    }
+    .overlay{
+        position: static;
+        width: 760px;
+        height: 506px;
+    }
+    .vid{
+        position: absolute;
+        z-index: -1;
+        top: 10px;
+        width: 100%;
+        display: flex;
+    }
+    .meth{
+        position: absolute;
+        text-align: center;
+        top: 15px;
+        left: 270px;
+        right: 390px;
+        font-family: Abril Fatface;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 43px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.05em;
+    }
+    .piano_met{
+        display: flex;
+        position: absolute;
+        width: 520px;
+        height: 480px;
+        left: 460px;
+        top: 25px;
+    }
+    .ebony{
+        position: absolute;
+        top: 150px;
+        left: 23px;
+        text-align: center;
+        color: white;
+        font-family: Abril Fatface;
+        font-family: Abril Fatface;
+        font-style: normal;
+        font-weight: normal;
+    }
+    .star{
+        position: absolute;
+        bottom:590px;
+        right: 400px;
+        color: white;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: bold;
+     }
+     .price{
+        position: absolute;
+        top:245px;
+        left: 70px;
+        color: white;
+        font-family: Abril Fatface;
+        font-family: Abril Fatface;
+        font-style: normal;
+        font-weight: normal; 
+     }
+     .parra{
+        position: absolute;
+        top: 300px;
+        left: 45px;
+        right: 500PX;
+        justify-content: right;
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: normal;
+        color: white;
+     }
+    
+     
+    
+
 }
 
 
